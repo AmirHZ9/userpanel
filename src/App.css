@@ -6,7 +6,10 @@
 .App {
   text-align: center;
 }
-
+body{
+  background-color: rgb(238, 238, 238) !important;
+    color: rgb(60, 72, 88) !important;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

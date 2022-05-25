@@ -32,12 +32,11 @@ export default function Sidebar() {
             <div
               className={styles.personalInfo}
               id="personalInfo"
-              onClick={() => accordianMenu()}
               name="menu"
             >
-              <div className=" d-flex align-items-center ">
+              <div className={styles.personalName}>
                 <img src={pic} alt="amirhz" />
-                <p className="ms-3">AmirHZ</p>
+                <p>AmirHZ</p>
               </div>
               <div>
                 <p><i class="fa-solid fa-grid"></i></p>

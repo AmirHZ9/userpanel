@@ -1,0 +1,62 @@
+.Navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 260px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbarTitle{
+    font-weight: 300;
+
+}
+.searchBTN,
+.sidebarBTN {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  margin: 10px;
+  box-shadow: 0 2px 2px 0 rgb(153 153 153 / 14%),
+    0 3px 1px -2px rgb(153 153 153 / 20%), 0 1px 5px 0 rgb(153 153 153 / 12%);
+  min-height: auto;
+  color: #999;
+  background-color: #fff;
+}
+.navbarMain {
+  display: flex;
+  align-items: center;
+}
+.navbarList {
+  display: flex;
+  margin: 5px;
+  margin-right: 25px;
+  align-items: center;
+  list-style: none;
+}
+.navbarList li {
+  margin-left: 10px;
+}
+.navbarRightSection {
+  display: flex;
+  align-items: center;
+}
+.searchBTN{
+    margin-left: 0;
+}
+.searchInput {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #49505741;
+  
+  padding: 10px;
+  height: 30px;
+  outline: none;
+}
