@@ -1,95 +1,140 @@
-.sidebar{
-  
-    width: 260px;
-    height: 100vh;
-    background: url('../assets/pics/sidebarpics/reflection-rocky-mountains-sky-beautiful-lake.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;   
-    color: #FFFFFF;
+.sidebar {
+  position: relative;
+  width: 260px;
+  height: 100vh;
+  background: url("../assets/pics/sidebarpics/reflection-rocky-mountains-sky-beautiful-lake.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
 }
-.sidebarShadow{
-    width: 100%;
-    height: 100vh;
-    opacity: 0.8;
-    background-color: #000;
+.sidebar::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  opacity: 0.6;
+  background-color: #000;
 }
-.logo{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    position: relative;
+.profile {
+  position: relative;
+  z-index: 5;
 }
-.title{
-    font-size: 1.2rem;
-
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+.title {
+  font-size: 1.2rem;
 }
 
 .personal::after,
-.logo:after{
-    content: "";
-    width: calc(100% - 30px);
-    height: 1px;
-    position: absolute;
-    bottom: 0;
-    background-color: hsla(0,0%,100%,.3);
-    right: 15px;
-
+.logo:after {
+  content: "";
+  width: calc(100% - 30px);
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  right: 15px;
 }
-.personal{
-    display:  flex;
-    flex-direction: column;
-    position: relative;
-    padding: 10px 0;
-    
+.personal {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 10px 0;
 }
-.personalInfo{
-    padding: 10px;
-    display:  flex;
-    justify-content: space-around;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-   
+.personalInfo {
+  padding: 5px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
 }
 
-.personalInfo img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-
-    
+.personalInfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
-.personalInfo p{
-    margin: 0 20px;
+.personalInfo p {
+  margin: 0 20px;
 }
 
-.personal ul{
-    list-style-type: none;
-    font-size: 15px;
+.personal ul {
+  list-style-type: none;
+  font-size: 15px;
 }
-.personal ul span{
-    margin-right: 10px;
-    width: 30px;
-    text-align: center;
+ ul span {
+  margin-right: 10px;
+  width: 40px;
+  text-align: center;
 }
 
-.personal li{
-    cursor: pointer;
-    margin: 10px  0;
-    display: flex;
-    padding: 10px;
-    transition: .3s ease-in;
-    border-radius: 5px;
+.panel li,
+.personal li {
+  cursor: pointer;
+  margin: 10px 0;
+  display: flex;
+  padding: 10px;
+  transition: 0.3s ease-in;
+  border-radius: 5px;
 }
-.personal li:hover{
-    background-color: rgba(256, 255, 255, 0.2);
+.panel li:hover,
+.personal li:hover,
+.listItemTitle:hover {
+  background-color: rgba(256, 255, 255, 0.2);
 }
-ol,ul{
-    padding:0 !important ;
-}
+
 .panel {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+/* Dashbord */
+
+.dashboard {
+  padding: 30px;
+}
+.dashboardTitle {
+  cursor: pointer;
+  background: #00acc1;
+
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 12px 20px -10px rgba(0, 172, 193, 0.28),
+    0 4px 20px 0 rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(0, 172, 193, 0.2);
+}
+.dashboardLogo {
+  width: 40px;
+  padding-right: 15px;
+  float: left;
+}
+.List {
+  list-style-type: none;
+}
+.listItemTitle {
+  cursor: pointer;
+  display: flex;
+
+  padding: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+  margin: 8px 0;
+}
+.IistItem {
+  display: flex;
+
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+  margin: 8px 0;
+}
