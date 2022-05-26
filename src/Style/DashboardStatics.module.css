@@ -1,0 +1,80 @@
+.DasboardStatics {
+  float: right;
+  width: calc(100% - 260px);
+  margin: 30px 0;
+}
+
+.statcis {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.statcisBox {
+  position: relative;
+  background-color: #fff;
+  width: 45%;
+  border-radius: 6px;
+  height: 120px;
+  margin: 30px 15px;
+}
+.staticsUsedSpace,
+.staticsRevenue,
+.staticsFixedIssues,
+.staticsFollowers {
+  position: absolute;
+  top: -20px;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+    0 7px 10px -5px rgba(255, 152, 0, 0.4);
+    border-radius: 3px;
+}
+.staticsUsedSpace {
+  background-color: #fb8c00;
+}
+.staticsRevenue {
+  background-color: #43a047;
+}
+.staticsFixedIssues {
+  background-color: #e53935;
+}
+.staticsFollowers {
+  background-color: #00acc1;
+}
+.statcisBoxDetails{
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+
+}
+.staticsTitle{
+    height: 30px;
+    margin-bottom: 15px;
+    color: #999;
+    font-size: 14px;
+    text-align: right;
+}
+.statcisBoxDetails span{
+    color: #3C4858;;
+    font-weight: 300;
+    float: right;
+    font-size: 1.825em;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+
+}
+.statcisBoxTopSection{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.123);
+    height: 80px;
+    width: calc(100% - 30px);
+    position: absolute;
+    right: 15px;
+}
+.statcisBottomSection{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.statcisBottomSection p{
+    font-size: 12px;
+    color: #999;
+}
