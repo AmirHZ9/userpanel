@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "../Style/DashboardStatics.module.css";
+import { copyIcon,warningIcon,shopIcon,twitterIcon } from "../assets/icons/icons";
 export default function DasboardStatics() {
   return (
-    <div className={styles.DasboardStatics}>
+    <div className={styles.DasboardStatics}> 
       <div className={styles.statcis}>
+   
         <div className={styles.statcisBox}>
           <div className={styles.statcisBoxTopSection}>
-            <div className={styles.staticsUsedSpace}></div>
+            <div className={styles.staticsUsedSpace}><span>{copyIcon}</span></div>
             <div className={styles.statcisBoxDetails}>
               <p className={styles.staticsTitle}>Used Space</p>
               <span>49/50<sub>GB</sub></span>
@@ -18,7 +20,7 @@ export default function DasboardStatics() {
         </div>
         <div className={styles.statcisBox}>
           <div className={styles.statcisBoxTopSection}>
-            <div className={styles.staticsRevenue}></div>
+            <div className={styles.staticsRevenue}><span>{shopIcon}</span></div>
             <div className={styles.statcisBoxDetails}>
               <p className={styles.staticsTitle}>Revenue</p>
               <span>$34,245</span>
@@ -30,7 +32,7 @@ export default function DasboardStatics() {
         </div>
         <div className={styles.statcisBox}>
           <div className={styles.statcisBoxTopSection}>
-            <div className={styles.staticsFixedIssues}></div>
+            <div className={styles.staticsFixedIssues}><span>{warningIcon}</span></div>
             <div className={styles.statcisBoxDetails}>
               <p className={styles.staticsTitle}>Fixed Issues</p>
               <span>75</span>
@@ -42,7 +44,7 @@ export default function DasboardStatics() {
         </div>
         <div className={styles.statcisBox}>
           <div className={styles.statcisBoxTopSection}>
-            <div className={styles.staticsFollowers}></div>
+            <div className={styles.staticsFollowers}><span>{twitterIcon}</span></div>
             <div className={styles.statcisBoxDetails}>
               <p className={styles.staticsTitle}>Followers</p>
               <span>+245</span>

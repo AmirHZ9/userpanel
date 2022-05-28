@@ -23,15 +23,19 @@
 .staticsFollowers {
   position: absolute;
   top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80px;
   height: 80px;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
     0 7px 10px -5px rgba(255, 152, 0, 0.4);
-    border-radius: 3px;
+  border-radius: 3px;
 }
 .staticsUsedSpace {
   background-color: #fb8c00;
 }
+
 .staticsRevenue {
   background-color: #43a047;
 }
@@ -41,40 +45,46 @@
 .staticsFollowers {
   background-color: #00acc1;
 }
-.statcisBoxDetails{
-    position: absolute;
-    right: 10px;
-    padding: 10px;
-
+.staticsFollowers span,
+.staticsFixedIssues span,
+.staticsRevenue span,
+.staticsUsedSpace span {
+  width: 30px;
+  display: inline-block;
+  fill: white;
 }
-.staticsTitle{
-    height: 30px;
-    margin-bottom: 15px;
-    color: #999;
-    font-size: 14px;
-    text-align: right;
+.statcisBoxDetails {
+  position: absolute;
+  right: 10px;
+  padding: 10px;
 }
-.statcisBoxDetails span{
-    color: #3C4858;;
-    font-weight: 300;
-    float: right;
-    font-size: 1.825em;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-
+.staticsTitle {
+  height: 30px;
+  margin-bottom: 15px;
+  color: #999;
+  font-size: 14px;
+  text-align: right;
 }
-.statcisBoxTopSection{
-    border-bottom: 1px solid rgba(128, 128, 128, 0.123);
-    height: 80px;
-    width: calc(100% - 30px);
-    position: absolute;
-    right: 15px;
+.statcisBoxDetails span {
+  color: #3c4858;
+  font-weight: 300;
+  float: right;
+  font-size: 1.825em;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
-.statcisBottomSection{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+.statcisBoxTopSection {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.123);
+  height: 80px;
+  width: calc(100% - 30px);
+  position: absolute;
+  right: 15px;
 }
-.statcisBottomSection p{
-    font-size: 12px;
-    color: #999;
+.statcisBottomSection {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.statcisBottomSection p {
+  font-size: 12px;
+  color: #999;
 }

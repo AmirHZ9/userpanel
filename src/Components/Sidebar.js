@@ -1,8 +1,7 @@
 import React, { useEffect} from "react";
 import styles from "../Style/Sidebar.module.css";
 import pic from "../assets/pics/personimages/amirhz.jpg";
-import { accordianMenu } from "../function/function";
-
+import {downArrowIcon, reacticon,img,dashboardIcon,componentsIcon,formIcon,tableIcons,mapIcon,widgetIcon,calendarIcon,chartIcon } from "../assets/icons/icons";
 export default function Sidebar() {
   const menu = document.getElementsByName("menu");
 
@@ -25,6 +24,7 @@ export default function Sidebar() {
       <div className={styles.sidebar}>
         <div className={styles.profile}>
           <div className={styles.logo}>
+            <span className={styles.dashboardLogo}>{reacticon}</span>
             <p className={styles.title}>CREATIVE</p>
           </div>
 
@@ -39,7 +39,7 @@ export default function Sidebar() {
                 <p>AmirHZ</p>
               </div>
               <div>
-                <p><i class="fa-solid fa-grid"></i></p>
+              <span  className={styles.downArrowIcon}>{downArrowIcon}</span>
               </div>
             </div>
             <div className={styles.panel}>
@@ -58,15 +58,17 @@ export default function Sidebar() {
           </div>
           <div className={styles.dashboard}>
             <p className={styles.dashboardTitle}>
-              <span className={styles.dashboardLogo}>#</span> Dashboard
+              <span className={styles.dashboardLogo}>{dashboardIcon}</span> Dashboard
             </p>
             <div className={styles.dashboardList}>
               <ul className={styles.List}>
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
+                  <span className={styles.dashboardLogo}>{img}</span>
                     <p>
-                      <span className={styles.dashboardLogo}>#</span> Pages
+                       Pages
                     </p>
+
                   </div>
                   <ul className={styles.panel}>
                     <li>
@@ -122,7 +124,7 @@ export default function Sidebar() {
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
                     <p>
-                      <span className={styles.dashboardLogo}>#</span> Components
+                      <span className={styles.dashboardLogo}>{componentsIcon}</span> Components
                     </p>
                   </div>
                   <ul className={styles.panel}>
@@ -170,7 +172,7 @@ export default function Sidebar() {
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
                     <p>
-                      <span className={styles.dashboardLogo}>#</span> Forms
+                      <span className={styles.dashboardLogo}>{formIcon}</span> Forms
                     </p>
                   </div>
                   <ul className={styles.panel}>
@@ -202,7 +204,7 @@ export default function Sidebar() {
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
                     <p>
-                      <span className={styles.dashboardLogo}>#</span> Tables
+                      <span className={styles.dashboardLogo}>{tableIcons}</span> Tables
                     </p>
                   </div>
                   <ul className={styles.panel}>
@@ -229,7 +231,7 @@ export default function Sidebar() {
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
                     <p>
-                      <span className={styles.dashboardLogo}>#</span> Maps
+                      <span className={styles.dashboardLogo}>{mapIcon}</span> Maps
                     </p>
                   </div>
                   <ul className={styles.panel}>
@@ -256,21 +258,21 @@ export default function Sidebar() {
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
                     <p>
-                      <span className={styles.dashboardLogo}>#</span> Widgets
+                      <span className={styles.dashboardLogo}>{widgetIcon}</span> Widgets
                     </p>
                   </div>
                 </li>
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
                     <p>
-                      <span className={styles.dashboardLogo}>#</span> Chats
+                      <span className={styles.dashboardLogo}>{chartIcon}</span> Charts
                     </p>
                   </div>
                 </li>
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
                     <p>
-                      <span className={styles.dashboardLogo}>#</span> Calendar
+                      <span className={styles.dashboardLogo}>{calendarIcon}</span> Calendar
                     </p>
                   </div>
                 </li>
