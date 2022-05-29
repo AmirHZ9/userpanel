@@ -23,6 +23,7 @@ export default function Navbar() {
         />
         <button className={styles.searchBTN}>
           <span>{searchIcon}</span>
+          
         </button>
         <ul className={styles.navbarList}>
           <li><span>{dashboardIcon}</span></li>

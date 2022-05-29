@@ -1,18 +1,190 @@
-.sidebarSettingIcon{
-    position: absolute;
-    top: 50px;
-    right: 0;
-    display:  flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 50px;
-    background-color: #5555559c;
-    border-radius: 10px 0 0 10px;
-    cursor: pointer;
+.sidebarSettingIcon {
+  position: absolute;
+  top: 150px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 50px;
+  background-color: #5555556b;
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
 }
-.sidebarSettingIcon span{
-    width: 30px;
-    display: inline-block;
-    fill: white;
+.sidebarSettingIcon span {
+  width: 30px;
+  display: inline-block;
+  fill: white;
+}
+.sidebarSettingMain {
+  position: absolute;
+  z-index: 1000;
+  top: 100px;
+  right: 80px;
+  width: 280px;
+  height: 550px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.253);
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  display: none;
+}
+.sidebarSettingMain::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+  background-color: #fff;
+  border-top: 1px solid rgba(128, 128, 128, 0.253);
+  border-right: 1px solid rgba(128, 128, 128, 0.253);
+  right: -14px;
+}
+.sidebarSettingColor {
+  position: relative;
+}
+.sidebarChangeImage P,
+.sidebarSettingBackgroundColor p,
+.sidebarSettingColor p {
+  height: 30px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 10px 0 !important;
+}
+
+.blueSidebar,
+.graySidebar,
+.blackSidebar,
+.green,
+.blue,
+.purple,
+.gray,
+.pink,
+.orange,
+.red {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+.green {
+  background-color: #4caf50;
+}
+.blueSidebar,
+.blue {
+  background-color: #00bcd4;
+}
+.purple {
+  background-color: #9c27b0;
+}
+.graySidebar,
+.gray {
+  background-color: hsla(0, 0%, 78.4%, 0.2);
+}
+.pink {
+  background-color: #f44336;
+}
+.orange {
+  background-color: #ff9800;
+}
+.red {
+  background-color: #e91e63;
+}
+.blackSidebar {
+  background-color: black;
+}
+.sidebarSettingBackgroundColorItem,
+.sidebarSettingColorItem {
+  display: flex;
+  justify-content: center;
+}
+.sidebarChangeImage::after,
+.sidebarDisplayImage::after,
+.sidebarSettingBackgroundColor::after,
+.sidebarSettingColor::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: calc(100% - 30px);
+  right: 15px;
+  bottom: -15px;
+  border: 1px solid rgba(128, 128, 128, 0.253);
+}
+.sidebarSettingBackgroundColor {
+  margin-top: 30px;
+  position: relative;
+}
+.sidebarDisplayImage {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+
+.sidebarChangeImage {
+  position: relative;
+}
+.sidebarChangeImage ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.sidebarChangeImage li {
+  margin: 5px;
+  cursor: pointer;
+}
+.sidebarChangeImage li img {
+    width: 50px;
+    height: 100px;
+    transition: 0.1s ease-in;
+}
+
+.sidebarChangeImage li img:hover,
+.sidebarSettingColorItem span:hover,
+.sidebarSettingBackgroundColorItem span:hover {
+  outline: 3px solid #0bf;
+}
+.settingButton {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.settingButton button {
+  width: 90%;
+  padding: 10px 0;
+  margin: 5px auto;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.3s ease-out;
+}
+.buyBtn {
+  background-color: #ff9800;
+  box-shadow: 0 2px 2px 0 rgba(255, 152, 0, 0.14),
+    0 3px 1px -2px rgba(255, 152, 0, 0.2), 0 1px 5px 0 rgba(255, 152, 0, 0.12);
+}
+.docBtn {
+  background-color: #00acc1;
+  box-shadow: 0 2px 2px 0 rgba(0, 172, 193, 0.14),
+    0 3px 1px -2px rgba(0, 172, 193, 0.2), 0 1px 5px 0 rgba(0, 172, 193, 0.12);
+}
+.buyBtn:hover {
+  box-shadow: 0 14px 26px -12px rgba(255, 152, 0, 0.42),
+    0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 152, 0, 0.2);
+}
+.docBtn:hover {
+  box-shadow: 0 14px 26px -12px rgba(0, 172, 193, 0.42),
+    0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 172, 193, 0.2);
 }

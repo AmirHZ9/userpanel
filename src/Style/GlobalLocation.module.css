@@ -1,0 +1,23 @@
+.globalLocation {
+  float: right;
+  width: calc(100% - 260px);
+  margin: 30px 0;
+  position: relative;
+}
+.globalIcon{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    background: linear-gradient(60deg, #66bb6a, #43a047);    top: -18px;
+    left: 40px;
+}
+.globalContainer{
+    background-color: #fff;
+    height: 500px;
+    width: 95%;
+    margin: auto;
+    border-radius: 8px;
+}
+.map{
+    width: 300px;
+}
