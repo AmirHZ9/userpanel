@@ -89,6 +89,8 @@
   width:15px !important;
   height: 15px;
   display: inline-block;
-
-
+}
+.sidebar{
+  width: 100px;
+  transition: 0.3s;
 }

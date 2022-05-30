@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect,useRef } from "react";
 import styles from "../Style/Navbar.module.css";
+
+import { closeSidebar } from "../function/function";
 import {
   searchIcon,
   dashboardIcon,
@@ -8,10 +10,29 @@ import {
   menuIcon
 } from "../assets/icons/icons";
 export default function Navbar() {
+  const sidebar =document.getElementsByName('sidebar')
+  const sidebarCloseBtn = document.getElementsByName('sidebarCloseBtn')
+  useEffect(()=>{
+  },[])
+  let open = true;
+  const closeSidebar=()=>{
+    sidebar[0].style.transition="0.3s"
+    sidebar[0].style.overflow="hidden"
+
+    if(open){
+      sidebar[0].style.width = '100px';
+      open=false
+      }else{
+        sidebar[0].style.width = '260px';
+        open=true
+      }
+
+    
+  } 
   return (
     <div className={styles.Navbar}>
       <div className={styles.navbarMain}>
-        <button className={styles.sidebarBTN}><span>{menuIcon}</span></button>
+        <button className={styles.sidebarBTN} name="sidebarCloseBtn" onClick={closeSidebar}><span>{menuIcon}</span></button>
         <h3 className={styles.navbarTitle}>Dashboard</h3>
       </div>
 

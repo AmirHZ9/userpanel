@@ -5,7 +5,6 @@ import firstImage from "../assets/pics/sidebarpics/reflection-rocky-mountains-sk
 import { openMenu } from "../function/function";
 export default function SidebarSetting() {
   const menu = useRef(null);
-  console.log(menu);
   return (
     <div className={styles.sidebarSetting}>
       <div

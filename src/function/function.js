@@ -6,6 +6,11 @@ function openMenu(menu) {
   } else {
     menu.style.display = "none";
     open = true;
-  }
+  } 
 }
-export { openMenu };
+
+
+const closeSidebar =(sidebarbtn)=>{
+  console.log('asdf')
+}
+export { openMenu,closeSidebar };
