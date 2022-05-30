@@ -65,10 +65,12 @@ export default function Sidebar() {
             </div>
           </div>
           <div className={styles.dashboard}>
-            <span className={styles.dashboardLogo}>{dashboardIcon}</span>
-            <p className={styles.dashboardTitle}>Dashboard</p>
             <div className={styles.dashboardList}>
-              <ul className={styles.List}>
+              <ul className={styles.List} name='dashboardList'>
+                <li className={styles.dashboardTitle}>
+                  <span className={styles.dashboardLogo}>{dashboardIcon}</span>
+                  <p>Dashboard</p>
+                </li>
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
                     <span className={styles.dashboardLogo}>{img}</span>
@@ -76,219 +78,157 @@ export default function Sidebar() {
                   </div>
                   <ul className={styles.panel}>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>PP</span> Pricing
-                        Page
-                      </p>
+                      <span className={styles.dashboardLogo}>PP</span>
+                      <p>Pricing Page</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>RS</span> RTL
-                        Support
-                      </p>
+                      <span className={styles.dashboardLogo}>RS</span> RTL
+                      <p>Support</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>T</span> Timeline
-                        Page
-                      </p>
+                      <span className={styles.dashboardLogo}>T</span>
+                      <p>Timeline Page</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>L</span> Login
-                        Page
-                      </p>
+                      <span className={styles.dashboardLogo}>L</span>
+                      <p>Login Page</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>R</span> Register
-                        Page
-                      </p>
+                      <span className={styles.dashboardLogo}>R</span>
+                      <p>Register Page</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>LS</span> Lock
-                        Screen Page
-                      </p>
+                      <span className={styles.dashboardLogo}>LS</span>
+                      <p>Lock Screen Page</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>UP</span> User
-                        Profile
-                      </p>
+                      <span className={styles.dashboardLogo}>UP</span>
+                      <p>User Profile</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>EP</span> Error
-                        Page
-                      </p>
+                      <span className={styles.dashboardLogo}>EP</span>
+                      <p>Error Page</p>
                     </li>
                   </ul>
                 </li>
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
-                    <p>
-                      <span className={styles.dashboardLogo}>
-                        {componentsIcon}
-                      </span>{" "}
-                      Components
-                    </p>
+                    <span className={styles.dashboardLogo}>
+                      {componentsIcon}
+                    </span>
+                    <p>Components</p>
                   </div>
                   <ul className={styles.panel}>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>B</span>Buttons
-                      </p>
+                      <span className={styles.dashboardLogo}>B</span>
+                      <p>Buttons</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>GS</span> Grid
-                        System
-                      </p>
+                      <span className={styles.dashboardLogo}>GS</span>
+                      <p>Grid System</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>P</span> Panels
-                      </p>
+                      <span className={styles.dashboardLogo}>P</span>
+                      <p>Panels</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>SA</span> Sweet
-                        Alert
-                      </p>
+                      <span className={styles.dashboardLogo}>SA</span>
+                      <p>Sweet Alert</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>N</span>{" "}
-                        Notifications
-                      </p>
+                      <span className={styles.dashboardLogo}>N</span>
+                      <p>Notifications</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>I</span> Icons
-                      </p>
+                      <span className={styles.dashboardLogo}>I</span>
+                      <p>Icons</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>T</span>{" "}
-                        Typeogrphy
-                      </p>
+                      <span className={styles.dashboardLogo}>T</span>
+                      <p>Typeogrphy</p>
                     </li>
                   </ul>
                 </li>
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
-                    <p>
-                      <span className={styles.dashboardLogo}>{formIcon}</span>{" "}
-                      Forms
-                    </p>
+                    <span className={styles.dashboardLogo}>{formIcon}</span>
+                    <p>Forms</p>
                   </div>
                   <ul className={styles.panel}>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>RF</span> Regular
-                        Forms
-                      </p>
+                      <span className={styles.dashboardLogo}>RF</span>
+                      <p>Regular Forms</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>EF</span>{" "}
-                        Extended Forms
-                      </p>
+                      <span className={styles.dashboardLogo}>EF</span>
+                      <p>Extended Forms</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>VF</span>{" "}
-                        Validation Forms
-                      </p>
+                      <span className={styles.dashboardLogo}>VF</span>
+                      <p>Validation Forms</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>W</span> Wizard
-                      </p>
+                      <span className={styles.dashboardLogo}>W</span>
+                      <p>Wizard</p>
                     </li>
                   </ul>
                 </li>
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
-                    <p>
-                      <span className={styles.dashboardLogo}>{tableIcons}</span>{" "}
-                      Tables
-                    </p>
+                    <span className={styles.dashboardLogo}>{tableIcons}</span>
+                    <p>Tables</p>
                   </div>
                   <ul className={styles.panel}>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>RT</span> Regular
-                        Tables
-                      </p>
+                      <span className={styles.dashboardLogo}>RT</span>
+                      <p>Regular Tables</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>ET</span>Extended
-                        Tables
-                      </p>
+                      <span className={styles.dashboardLogo}>ET</span>
+                      <p>Extended Tables</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>RT</span>React
-                        Tables
-                      </p>
+                      <span className={styles.dashboardLogo}>RT</span>
+                      <p>React Tables</p>
                     </li>
                   </ul>
                 </li>
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
-                    <p>
-                      <span className={styles.dashboardLogo}>{mapIcon}</span>{" "}
-                      Maps
-                    </p>
+                    <span className={styles.dashboardLogo}>{mapIcon}</span>
+                    <p>Maps</p>
                   </div>
                   <ul className={styles.panel}>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>GM</span> Google
-                        Maps
-                      </p>
+                      <span className={styles.dashboardLogo}>GM</span>
+                      <p>Google Maps</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>FSM</span> Full
-                        Screen Map
-                      </p>
+                      <span className={styles.dashboardLogo}>FSM</span>
+                      <p>Full Screen Map</p>
                     </li>
                     <li>
-                      <p>
-                        <span className={styles.dashboardLogo}>VM</span> Vector
-                        Map
-                      </p>
+                      <span className={styles.dashboardLogo}>VM</span>
+                      <p>Vector Map</p>
                     </li>
                   </ul>
                 </li>
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
-                    <p>
-                      <span className={styles.dashboardLogo}>{widgetIcon}</span>{" "}
-                      Widgets
-                    </p>
+                    <span className={styles.dashboardLogo}>{widgetIcon}</span>
+                    <p>Widgets</p>
                   </div>
                 </li>
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
-                    <p>
-                      <span className={styles.dashboardLogo}>{chartIcon}</span>{" "}
-                      Charts
-                    </p>
+                    <span className={styles.dashboardLogo}>{chartIcon}</span>
+                    <p>Charts</p>
                   </div>
                 </li>
                 <li className={styles.listItem}>
                   <div className={styles.listItemTitle} name="menu">
-                    <p>
-                      <span className={styles.dashboardLogo}>
-                        {calendarIcon}
-                      </span>{" "}
-                      Calendar
-                    </p>
+                    <span className={styles.dashboardLogo}>{calendarIcon}</span>
+                    <p>Calendar</p>
                   </div>
                 </li>
               </ul>

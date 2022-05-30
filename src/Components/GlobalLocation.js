@@ -15,7 +15,7 @@ export default function GlobalLocation() {
         </h2>
         <ul className={styles.countryList}>
           {countryList.map((item) => (
-            <li>
+            <li key={item.id}>
               <img src={item.img} alt={item.country} />
               <span className={styles.countryName}>{item.country}</span>
               <span className={styles.countryStatics}>{item.statistics}</span>

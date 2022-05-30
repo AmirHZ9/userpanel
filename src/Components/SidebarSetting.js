@@ -44,16 +44,16 @@ export default function SidebarSetting() {
           <p>IMAGE</p>
           <ul>
             <li>
-              <img src={firstImage} alt="image" />
+              <img src={firstImage} alt="" />
             </li>
             <li>
-              <img src={firstImage} alt="image" />
+              <img src={firstImage} alt="" />
             </li>
             <li>
-              <img src={firstImage} alt="image" />
+              <img src={firstImage} alt="" />
             </li>
             <li>
-              <img src={firstImage} alt="image" />
+              <img src={firstImage} alt="" />
             </li>
           </ul>
         </div>
