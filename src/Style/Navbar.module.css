@@ -1,6 +1,4 @@
 .Navbar {
-  float: right;
-  width: calc(100% - 260px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,6 +7,7 @@
     font-weight: 300;
 
 }
+
 .searchBTN,
 .sidebarBTN {
   position: relative;
@@ -69,10 +68,11 @@
   height: 30px;
   outline: none;
 }
+
 .navbarList span{
   fill: #555555 ;
-  width: 14px;
   display: inline-block ;
+  width: 14px;
 }
 .alertIcon{
   position: relative;
@@ -93,4 +93,12 @@
 .sidebar{
   width: 100px;
   transition: 0.3s;
+}
+@media screen and (max-width: 960px){
+  .Navbar{
+    width: 96%;
+  }
+  .sidebarBTN{
+    display: none;
+  }
 }

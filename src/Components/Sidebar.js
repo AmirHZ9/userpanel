@@ -16,9 +16,13 @@ import {
 } from "../assets/icons/icons";
 export default function Sidebar() {
   const menu = document.getElementsByName("menu");
+  const mainDashboard = document.getElementsByName('mainDashboard')//MainDashboard
+  const sidebar = document.getElementsByName("sidebar");
+  
 
   useEffect(() => {
-    // accordianMenu******
+    
+        // accordianMenu******
     for (let i = 0; i < menu.length; i++) {
       menu[i].addEventListener("click", function() {
         var panel = this.nextElementSibling;
@@ -30,13 +34,33 @@ export default function Sidebar() {
       });
     }
   }, []);
+ 
+// const sidebarOpenHandler = ()=>{
+//   if(sidebar[0].style.width == "100px"){
 
+//     mainDashboard[0].style.width = 'calc(100% - 260px)'
+//         sidebar[0].style.width = "260px";
+        
+//       }
+  
+
+// }
+// const sidebarCloseHandler = ()=> {
+  
+// if(sidebar[0].style.width == "260px" ){
+//   mainDashboard[0].style.width = 'calc(100% - 100px)'
+//   sidebar[0].style.width = "100px";
+
+
+// }
+  
+// }
   return (
     <div>
       <div className={styles.sidebar} name="sidebar">
         <div className={styles.profile}>
           <div className={styles.logo}>
-            <span className={styles.dashboardLogo}>{reacticon}</span>
+            <span className={styles.reactLogo}>{reacticon}</span>
             <p className={styles.title}>CREATIVE</p>
           </div>
 
@@ -46,20 +70,21 @@ export default function Sidebar() {
                 <img src={pic} alt="amirhz" />
                 <p>AmirHZ</p>
               </div>
-              <div>
-                <span className={styles.downArrowIcon}>{downArrowIcon}</span>
-              </div>
+            
             </div>
             <div className={styles.panel}>
               <ul>
                 <li>
-                  <span>MP</span> My Profile
+                  <span>MP</span>
+                  <p>My Profile</p> 
                 </li>
                 <li>
-                  <span>EP</span> Edit Profile
+                  <span>EP</span>
+                  <p>Edit Profile</p> 
                 </li>
                 <li>
-                  <span>S</span> Setting
+                  <span>S</span>
+                  <p>Setting</p> 
                 </li>
               </ul>
             </div>
@@ -82,7 +107,7 @@ export default function Sidebar() {
                       <p>Pricing Page</p>
                     </li>
                     <li>
-                      <span className={styles.dashboardLogo}>RS</span> RTL
+                    <span className={styles.dashboardLogo}>RS</span>
                       <p>Support</p>
                     </li>
                     <li>

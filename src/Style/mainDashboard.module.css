@@ -1,0 +1,6 @@
+.MainDashboard {
+    float: right;
+    width: calc(100% - 260px);
+    margin: 30px auto;
+    transition: .3s ease !important;
+  }

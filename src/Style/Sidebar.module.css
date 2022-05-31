@@ -20,19 +20,23 @@
   background-color: #000;
   transition: 0.3s;
 }
-.sidebar:hover{
+.sidebar:hover {
   width: 260px !important;
+}
+.sidebar:hover p{
+  opacity: 1 !important;
 }
 .profile {
   position: relative;
   z-index: 5;
 }
-.personalName{
-    display: flex;
-    align-items: center;
+.personalName {
+  display: flex;
+  align-items: center;
 }
-.personalName img{
-    margin-right: 10px;
+.personalName img {
+  margin-right: 10px;
+  margin-left: 5px;
 }
 .logo {
   display: flex;
@@ -82,9 +86,8 @@
   list-style-type: none;
   font-size: 15px;
 }
- ul span {
+ul span {
   margin-right: 10px;
-  width: 40px;
   text-align: center;
 }
 
@@ -110,7 +113,7 @@
   overflow: hidden;
   transition: max-height 0.4s ease-out;
 }
-.panel p{
+.panel p {
   font-size: 14px;
 }
 /* Dashbord */
@@ -129,21 +132,32 @@
     0 4px 20px 0 rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(0, 172, 193, 0.2);
 }
 .dashboardLogo {
-  width: 40px;
+  width: 35px;
   padding-right: 15px;
   float: left;
   fill: white;
-  width: 35px;
-
   text-align: center;
+  /* display: none; */
 }
+
+.reactLogo {
+  fill: #fff;
+  width: 20px;
+  position: absolute;
+  left: 38px;
+}
+
 .List {
   list-style-type: none;
+}
+.personal span,
+.List span {
+  min-width: 35px !important;
 }
 .listItemTitle {
   cursor: pointer;
   display: flex;
-align-items: center;
+  align-items: center;
   padding: 10px 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -159,19 +173,14 @@ align-items: center;
   transition: 0.4s ease-in-out;
   margin: 8px 0;
 }
-.downArrowIcon{
+.downArrowIcon {
   display: inline-block;
-  fill:white ;
+  fill: white;
   width: 10px;
 }
 
-@media screen and (max-width:960px){
-    .sidebar{
-        display: none;
-    }
-
+@media screen and (max-width: 960px) {
+  .sidebar {
+    display: none;
   }
-
- 
-
-
+}
