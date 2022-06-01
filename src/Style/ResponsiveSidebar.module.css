@@ -1,9 +1,10 @@
 .ResponsiveSidebar{
-    position: absolute;
+    position: fixed;
     right: -280px;
     top: 0;
     transition: 0.4s ;
     z-index: 101;
+    height: 100%;
 }
 
 .sidebar {
@@ -187,7 +188,7 @@
   }
   .windowBackgound{
       display: none;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
