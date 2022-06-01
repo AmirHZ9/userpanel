@@ -1,5 +1,4 @@
 .DasboardStatics {
-
   margin: 30px auto;
 }
 
@@ -89,10 +88,14 @@
   color: #999;
 }
 
-@media screen and (max-width:960px){
-  .DasboardStatics{
-     width: 100%;
-display: inline-block;
-
+@media screen and (max-width: 960px) {
+  .DasboardStatics {
+    width: 100%;
+    display: inline-block;
   }
+}
+@media screen and (max-width: 600px) {
+.statcisBox{
+  width: 100%;
+}
 }

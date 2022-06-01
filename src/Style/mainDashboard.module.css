@@ -1,6 +1,10 @@
 .MainDashboard {
     float: right;
     width: calc(100% - 260px);
-    margin: 30px auto;
     transition: .3s ease !important;
+  }
+  @media screen and (max-width:959px) {
+    .MainDashboard{
+      width: 100% !important;
+    }
   }

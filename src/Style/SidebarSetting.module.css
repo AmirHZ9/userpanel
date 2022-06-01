@@ -10,6 +10,7 @@
   background-color: #5555556b;
   border-radius: 10px 0 0 10px;
   cursor: pointer;
+  
 }
 .sidebarSettingIcon span {
   width: 30px;
@@ -79,14 +80,14 @@
 }
 .blueSidebar,
 .blue {
-  background-color: #00bcd4;
+  background-color: #00acc1;
 }
 .purple {
   background-color: #9c27b0;
 }
 .graySidebar,
 .gray {
-  background-color: hsla(0, 0%, 78.4%, 0.2);
+  background-color: #c8c8c833;
 }
 .pink {
   background-color: #f44336;
@@ -100,6 +101,7 @@
 .blackSidebar {
   background-color: black;
 }
+
 .sidebarSettingBackgroundColorItem,
 .sidebarSettingColorItem {
   display: flex;
