@@ -17,13 +17,14 @@ import {
   userIcon,
 } from "../assets/icons/icons";
 export default function ResponsiveSidebar() {
-  const menu = document.getElementsByName("menu");
+  const responsiveSidebarmenu = document.getElementsByName("responsiveSidebarmenu");
   const ResponsiveSidebar = document.getElementsByName("ResponsiveSidebar");
   useEffect(() => {
-    // accordianMenu******
-    for (let i = 0; i < menu.length; i++) {
-      menu[i].addEventListener("click", function() {
+    // accordianresponsiveSidebarMenu******
+    for (let i = 0; i < responsiveSidebarmenu.length; i++) {
+      responsiveSidebarmenu[i].addEventListener("click", function() {
         var panel = this.nextElementSibling;
+        console.log(panel)
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
         } else {
@@ -51,7 +52,7 @@ export default function ResponsiveSidebar() {
               <div
                 className={styles.personalInfo}
                 id="personalInfo"
-                name="menu"
+                name="responsiveSidebarmenu"
               >
                 <div className={styles.personalName}>
                   <img src={pic} alt="amirhz" />
@@ -115,7 +116,7 @@ export default function ResponsiveSidebar() {
                     <p>Dashboard</p>
                   </li>
                   <li className={styles.listItem}>
-                    <div className={styles.listItemTitle} name="menu">
+                    <div className={styles.listItemTitle} name="responsiveSidebarmenu">
                       <span className={styles.dashboardLogo}>{img}</span>
                       <p>Pages</p>
                     </div>
@@ -155,7 +156,7 @@ export default function ResponsiveSidebar() {
                     </ul>
                   </li>
                   <li className={styles.listItem}>
-                    <div className={styles.listItemTitle} name="menu">
+                    <div className={styles.listItemTitle} name="responsiveSidebarmenu">
                       <span className={styles.dashboardLogo}>
                         {componentsIcon}
                       </span>
@@ -193,7 +194,7 @@ export default function ResponsiveSidebar() {
                     </ul>
                   </li>
                   <li className={styles.listItem}>
-                    <div className={styles.listItemTitle} name="menu">
+                    <div className={styles.listItemTitle} name="responsiveSidebarmenu">
                       <span className={styles.dashboardLogo}>{formIcon}</span>
                       <p>Forms</p>
                     </div>
@@ -217,7 +218,7 @@ export default function ResponsiveSidebar() {
                     </ul>
                   </li>
                   <li className={styles.listItem}>
-                    <div className={styles.listItemTitle} name="menu">
+                    <div className={styles.listItemTitle} name="responsiveSidebarmenu">
                       <span className={styles.dashboardLogo}>{tableIcons}</span>
                       <p>Tables</p>
                     </div>
@@ -237,7 +238,7 @@ export default function ResponsiveSidebar() {
                     </ul>
                   </li>
                   <li className={styles.listItem}>
-                    <div className={styles.listItemTitle} name="menu">
+                    <div className={styles.listItemTitle} name="responsiveSidebarmenu">
                       <span className={styles.dashboardLogo}>{mapIcon}</span>
                       <p>Maps</p>
                     </div>
