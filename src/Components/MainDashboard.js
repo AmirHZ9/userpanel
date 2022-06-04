@@ -5,6 +5,8 @@ import Navbar from "./Navbar";
 import SidebarSetting from "./SidebarSetting";
 import styles from "../Style/mainDashboard.module.css"
 import ResponsiveSidebar from "./ResponsiveSidebar";
+import Chart from "./Chart";
+import Hotel from "./Hotel";
 export default function MainDashboard() {
   return (
     <div className={styles.MainDashboard} name="mainDashboard">
@@ -13,6 +15,8 @@ export default function MainDashboard() {
       <SidebarSetting />
       <GlobalLocation />
       <ResponsiveSidebar/>
+      <Chart/>
+      <Hotel/>
     </div>
   );
 }

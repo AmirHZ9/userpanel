@@ -1,0 +1,81 @@
+.chartContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 15px;
+}
+.chart {
+  position: relative;
+  width: 30%;
+  border: 1px solid rgba(128, 128, 128, 0.418);
+  height: 280px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  padding: 10px;
+  margin-bottom:30px ;
+}
+.chart:hover .firstChart,
+.chart:hover .secondChart,
+.chart:hover .thirdChart {
+  top: -80px;
+}
+.firstChart,
+.secondChart,
+.thirdChart {
+  position: absolute;
+  width: 85%;
+  left: 17px;
+  height: 60%;
+  top: -20px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.firstChart {
+  background-color: #23c4d8;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+    0 7px 10px -5px rgba(0, 172, 193, 0.4);
+}
+.secondChart {
+  background-color: #ffa422;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+    0 7px 10px -5px rgba(255, 152, 0, 0.4);
+}
+.thirdChart {
+  background-color: #ee504d;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+    0 7px 10px -5px rgba(244, 67, 54, 0.4);
+}
+.chartText {
+  position: absolute;
+  top: 180px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+}
+.chartTimeUpdate {
+  position: absolute;
+  bottom: 15px;
+}
+.chartText h4 {
+  color: #3c4858;
+  margin-top: 0px;
+  min-height: auto;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  margin-bottom: 3px;
+  text-decoration: none;
+}
+.chartText p {
+  color: #999;
+  font-size: 14px;
+}
+.chartText p span {
+  color: #4caf50;
+}
+.chartTimeUpdate {
+  color: #999;
+  display: inline-flex;
+  font-size: 12px;
+  line-height: 22px;
+}
