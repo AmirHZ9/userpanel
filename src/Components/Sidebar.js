@@ -34,7 +34,7 @@ export default function Sidebar() {
   }, []);
  
   return (
-    <div>
+    <div className={styles.sidebarContainer}>
       <div className={styles.sidebar} name="sidebar">
         <div className={styles.profile}>
           <div className={styles.logo}>

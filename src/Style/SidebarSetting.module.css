@@ -1,5 +1,5 @@
 .sidebarSettingIcon {
-  position: absolute;
+  position: fixed;
   top: 150px;
   right: 0;
   display: flex;
@@ -10,6 +10,7 @@
   background-color: #5555556b;
   border-radius: 10px 0 0 10px;
   cursor: pointer;
+  z-index: 1000;
   
 }
 .sidebarSettingIcon span {
@@ -18,7 +19,7 @@
   fill: white;
 }
 .sidebarSettingMain {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top: 100px;
   right: 80px;
